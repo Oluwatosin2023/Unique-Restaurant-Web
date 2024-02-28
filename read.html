@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Style the video: 100% width and height to cover the entire window */
+
+        #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  /* height: 100vh; */
+  padding: 5px;
+}
+.content p{
+    font-size: 15px;
+}
+.content span{
+    color:  #009688;
+    font-weight: bolder;
+}
+@media screen and (min-width: 601px) {
+.content{
+    font-size: 15px;
+}
+    
+}
+@media screen and (max-width: 736px) {
+.content{
+    font-size: 10px;
+}
+    
+}
+
+    </style>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/video2.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content">
+        <h1>Welcome to Unique Restaurant</h1>
+       
+        <p>At <span>Unique Restaurant</span> we believe in creating more than just a dining experience; <br>We strive to craft moments that linger in your memory. Our commitment to exceptional service, delectable cuisine, and a warm ambiance sets us apart. 
+            <br>Read on to discover what makes us unique:
+        </p>         
+            <h2>Culinary Excellence</h2>
+            <p>Our chefs are dedicated to the artistry of cooking, sourcing the finest ingredients to create dishes that tantalize your taste buds. 
+                <br>From traditional favorites to innovative culinary creations, our menu reflects a passion for flavor and quality.</p>
+            
+            <h2>Ambiance and Atmosphere</h2>
+            <p>Step into a world where every detail is designed to enhance your dining experience. 
+            <br>Our restaurant is a blend of contemporary style and inviting comfort, providing the perfect setting for intimate dinners, family celebrations, or business meetings.</p>
+            
+            <h2>Sustainability and Locally Sourced Ingredients</h2>
+            <p>We are proud to support local farmers and suppliers, prioritizing sustainability in our practices. 
+                <br>Each dish is a celebration of fresh, locally sourced ingredients that contribute to the well-being of our community and planet.</p>
+            
+            <h2>Impeccable Service</h2>
+            <p>Our dedicated staff is committed to ensuring your visit is not just a meal but a memorable event. 
+                <br>From the moment you walk in, expect attentive and friendly service that adds a personal touch to your dining experience.</p>
+            
+            <h2>Special Events and Catering</h2>
+            <p>Celebrate life's milestones with us! <span>Unique Restaurant</span> is the perfect venue for special events, private parties, and catering services. 
+                <br>Let us turn your occasions into extraordinary moments.</p>
+            
+            <h2>Community Involvement</h2>
+            <p>We believe in giving back to the community that supports us. Discover our initiatives and events that aim to make a positive impact locally.</p>
+            
+            <h3>Ready to experience the extraordinary? Visit <span>Unique Restaurant</span> and indulge in a culinary journey that goes beyond the plate.</h3>
+            
+            [Contact Information: Include address, phone number, website, and social media links]
+    </div>
+    
+</body>
+</html>
